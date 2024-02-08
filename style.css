@@ -465,9 +465,8 @@ form input, form textarea {
     
     /* HEADER */
     #header {
-        background-image: url(image/minibackground.png); 
+        background-image: url(image/minibackground.png);
     }
-
     .header-text {
         margin-top: 100%;
         font-size: 16px;
@@ -482,6 +481,11 @@ form input, form textarea {
     }
 
     /* ABOUT */
+    #about {
+        padding:120px 0 0 0;
+        color: #ababab;
+    }
+
     .row .about-col-1, .row .about-col-2 {
         flex-basis: 100%;
     }
