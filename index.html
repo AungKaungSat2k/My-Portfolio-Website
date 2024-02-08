@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aung's Portfolio</title>
+    <script src="https://kit.fontawesome.com/62c32b9fe0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <h1><span>S</span>AT.</h1>
+                <img src="image/logo.png" alt="">
+            </div>
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+    </div>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container2">
+            <div class="header-text">
+                <p>Hello, my name is</p>
+                <h2>Aung Kaung Sat</h2>
+                <p>i am <span>Backend Developer</span>.</p>
+            </div>
+
+            <div class="contact-me-link">
+                <div class="click-link">
+                    <a href="https://www.facebook.com/uchiha.aungkaungsat.7"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <div class="click-link">
+                    <a href="https://x.com/AungKaungSat2k?s=07"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <div class="click-link">
+                    <a href="https://instagram.com/aungkaung_sat?igshid=cmYxa3o5bHRkZmN2"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <div class="click-link">
+                    <a href="https://www.linkedin.com/in/aung-kaung-sat-90a621291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="click-link">
+                    <a href="https://github.com/AungKaungSat2k"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+
+            <div class="download-button">
+                <a href=""><button>Hire Me</button></a>
+                <a href="image/aungcv.jpg" download><button>Download CV</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container2">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/about_me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>i'm a backend developer from <span>Myanmar. </span>I love to create web Design and code simply. I am currently 23 years old and a final year Physics student at WYU (West Yangon University).</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links active-tab" onclick="openTab('languageAndFramework')">Language & Framework</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Createing web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languageAndFramework">
+                        <div class="album">
+                            <div class="lfimg">
+                                <img src="image/Figma-1-logo.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                            <div class="lfimg">
+                                <img src="image/html.png" alt="">
+                                <p>HTML</p>
+                            </div>
+                            <div class="lfimg css">
+                                <img src="image/css.png" alt="">
+                                <p>CSS</p>
+                            </div>
+                            <div class="lfimg">
+                                <img src="image/js.png" alt="">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="lfimg">
+                                <img src="image/php.png" alt="">
+                                <p>PHP</p>
+                            </div>
+                            <div class="lfimg">
+                                <img src="image/laravel.png" alt="">
+                                <p>Laravel</p>
+                            </div>
+                            <div class="lfimg">
+                                <img src="image/bootstrap.webp" alt="">
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="lfimg">
+                                <img src="image/tailwindcss.png" alt="">
+                                <p>tailwind CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - current</span><br>Learning UI/UX & Web Development at Fairway Technology</li>
+                            <li><span>2016 - 2020</span><br>Specialization Physics Major at West Yangon University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+        <div class="container2">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-display"></i>
+                    <h2> Development</h2>
+                    <p>Develop the graphical user interface (GUI) of website with Javascript and server-side development with PHP and Laravel.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2> Web Design & Logo</h2>
+                    <p>Create and code the Logo, Web pages and internet sites as beautiful and morden designs.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Clean Code</h2>
+                    <p>Coding with clean and readable, understandable, testable and maintainable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <div class="container2">
+            <h1 class="sub-title">My Last Projects</h1>
+            <div class="work-list">
+                <div class="work project1">
+                    <img src="image/project1.png" alt="">
+                    <div class="layer">
+                        <h2>E-Commerce Website Project</h2>
+                        <p>For your fashions and new trending Products.</p>
+                        <div class="download-button">
+                            <a href="https://github.com/AungKaungSat2k/e-commerce-website">
+                                <button>Code</button>
+                            </a>
+                            <a href="https://aungkaungsat2k.github.io/e-commerce-website/">
+                                <button>Click to see Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work project1">
+                    <img src="image/QR.png" alt="">
+                    <div class="layer">
+                        <h2>QR Code Generator Project</h2>
+                        <p>Generate the QR Code you input.</p><br>
+                        <div class="download-button">
+                            <a href="">
+                                <button>Code</button>
+                            </a>
+                            <a href="https://aungkaungsat2k.github.io/QR-code-generator/">
+                                <button>Click to see Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work project1">
+                    <img src="image/password.png" alt="">
+                    <div class="layer">
+                        <h2>Random Password Generator Project</h2>
+                        <p>Generate a random password every single time you click button.</p>
+                        <div class="download-button">
+                            <a href="">
+                                <button>Code</button>
+                            </a>
+                            <a href="https://aungkaungsat2k.github.io/random-password-generator/">
+                                <button>Click to see Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work project1">
+                    <img src="image/Quiz.png" alt="">
+                    <div class="layer">
+                        <h2>Quiz Project</h2>
+                        
+                        <div class="download-button">
+                            <a href="">
+                                <button>Code</button>
+                            </a>
+                            <a href="https://aungkaungsat2k.github.io/mini-quiz/">
+                                <button>Click to see Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container2">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> aungkaungsat086@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+95) 9751838638</p>
+                    
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="15d582aa-6269-4a58-8107-d9f8892828bf">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="message" rows="6" placeholder="Message type here"></textarea>
+                        <div class="download-button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <p>©2023 all rights reserved</p>
+        <p>Privacy Policy</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
